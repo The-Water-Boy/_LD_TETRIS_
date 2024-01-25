@@ -3,7 +3,10 @@ guid: 3d59f2c54280faf44a90118096a787c2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - tetremino: {instanceID: 0}
+  - BlockSpawn: {fileID: 965287323903099388, guid: 4f3205a4159479c44a59c41651f8fd8a,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

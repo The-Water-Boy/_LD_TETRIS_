@@ -15,7 +15,7 @@ public class RowManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(FilledBlockCount);
+        //Debug.Log(FilledBlockCount);
         if(FilledBlockCount <= 9){
             DelteBlock = false;
         }
