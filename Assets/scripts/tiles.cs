@@ -16,6 +16,7 @@ public class tiles : MonoBehaviour
     {
         if(transform.parent.GetComponent<RowManager>().FilledBlockCount == 10){
             Destroy(checker.gameObject);
+            //transform.parent.GetComponent<RowManager>().FilledBlockCount = 0;
         }
     }
 

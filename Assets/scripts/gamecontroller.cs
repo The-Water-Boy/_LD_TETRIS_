@@ -30,18 +30,17 @@ public class gamecontroller : MonoBehaviour
 
     public void BlockRandomiser()
     {
-        int number;
+        
         if(count == 1){
-           number = Random.Range(0,6);
-            firstinline = number;
-            Debug.Log(firstinline);
-            count++;
+           firstinline = Random.Range(0,6);
+            Debug.Log("first in line "+ firstinline);
+            count = 2;
         }
-        if(count == 2){
-            number = Random.Range(0,6);
-            secondinline = number;
-            Debug.Log(secondinline);
-        }
+        //if(count == 2){
+            secondinline = Random.Range(0,6);
+            Debug.Log("first second number "+secondinline);
+            Debug.Log("count "+ count);
+        //}
         Movingtheque();
     }
     
@@ -49,35 +48,46 @@ public class gamecontroller : MonoBehaviour
     private void Movingtheque(){
         //instantiate firstinline block
         if(firstinline == 0){
-            //instantiate block
+            Debug.Log("hey");
+            Instantiate(Block1);
         }
         if(firstinline == 1){
             //instantiate block
+            Debug.Log("hey2");
+            Instantiate(Block2);
         }
         if(firstinline == 2){
             //instantiate block
+            Debug.Log("hey3");
+            Instantiate(Block3);
         }
         if(firstinline == 3){
             //instantiate block
+            Debug.Log("hey4");
+            Instantiate(Block4);
         }
         if(firstinline == 4){
             //instantiate block
+            Debug.Log("hey5");
+            Instantiate(Block5);
         }
         if(firstinline == 5){
             //instantiate block
+            Debug.Log("hey6");
+            Instantiate(Block6);
         }
         if(firstinline == 6){
             //instantiate block
+            Debug.Log("hey7");
+            Instantiate(Block7);
         }
-        if(firstinline == 7){
-            //instantiate block
-        }
+        
         // number in second position moves to first position
-        Debug.Log(firstinline);
+        Debug.Log("old firstinline number "+firstinline);
         firstinline = secondinline;
-        Debug.Log(secondinline);
+        Debug.Log("new firstinline number "+firstinline);
         //
-        //decrease count value
+        //set new second number
         
     }
 
