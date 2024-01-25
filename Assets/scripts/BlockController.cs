@@ -8,6 +8,7 @@ public class BlockController : MonoBehaviour
     private int ymovement, xmovement;
     private bool iscontrollable;
     public GameObject tetremino;
+    public GameObject BlockSpawn;
     // Start is called before the first frame update
     void Start()
     {

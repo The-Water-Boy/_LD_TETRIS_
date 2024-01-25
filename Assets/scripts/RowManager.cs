@@ -16,6 +16,9 @@ public class RowManager : MonoBehaviour
     void Update()
     {
         Debug.Log(FilledBlockCount);
+        if(FilledBlockCount <= 9){
+            DelteBlock = false;
+        }
     }
 
     public void FilledBlockCheck(){

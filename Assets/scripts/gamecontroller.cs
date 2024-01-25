@@ -8,6 +8,9 @@ public class gamecontroller : MonoBehaviour
     public GameObject Block2;
     public GameObject Block3;
     public GameObject Block4;
+    public GameObject Block5;
+    public GameObject Block6;
+    public GameObject Block7;
     private int count;
     private int firstinline;
     private int secondinline;
@@ -25,22 +28,23 @@ public class gamecontroller : MonoBehaviour
         
     }
 
-    void BlockRandomiser()
+    public void BlockRandomiser()
     {
         int number;
         if(count == 1){
-           number = Random.Range(0,3);
+           number = Random.Range(0,6);
             firstinline = number;
             Debug.Log(firstinline);
             count++;
         }
         if(count == 2){
-            number = Random.Range(0,3);
+            number = Random.Range(0,6);
             secondinline = number;
             Debug.Log(secondinline);
         }
         Movingtheque();
     }
+    
 
     private void Movingtheque(){
         //instantiate firstinline block
@@ -56,13 +60,25 @@ public class gamecontroller : MonoBehaviour
         if(firstinline == 3){
             //instantiate block
         }
+        if(firstinline == 4){
+            //instantiate block
+        }
+        if(firstinline == 5){
+            //instantiate block
+        }
+        if(firstinline == 6){
+            //instantiate block
+        }
+        if(firstinline == 7){
+            //instantiate block
+        }
         // number in second position moves to first position
         Debug.Log(firstinline);
         firstinline = secondinline;
         Debug.Log(secondinline);
         //
         //decrease count value
-        count -=1;
+        
     }
 
     //tilemapchecker
